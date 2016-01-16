@@ -10,15 +10,6 @@ First you need to require the composer package.  Run the following command from 
 composer require "illuminate/mail:5.2.*"
 ```
 
-## Registration
-
-Next you need to register the service provider with your application and tell Lumen to load your config.  The following lines should be added to `bootstrap/app.php`.
-
-```php
-$app->register(Illuminate\Mail\MailServiceProvider::class);
-$app->configure('mail');
-```
-
 ## Configuration
 
 The service provider expects a configuration file to exist.  The following lines will create the config directory if it does not exist and copy a fresh configuration file from the full Laravel framework.
@@ -26,6 +17,15 @@ The service provider expects a configuration file to exist.  The following lines
 ```
 mkdir -p config
 curl -o config/mail.php https://raw.githubusercontent.com/laravel/laravel/v5.2.0/config/mail.php
+```
+
+## Registration
+
+Next you need to register the service provider with your application and tell Lumen to load your config.  The following lines should be added to `bootstrap/app.php`.
+
+```php
+$app->register(Illuminate\Mail\MailServiceProvider::class);
+$app->configure('mail');
 ```
 
 ## Facade
