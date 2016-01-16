@@ -1,4 +1,4 @@
-# Storage
+# Filesystem
 
 The iiluminate/filesytem package is included with Lumen, but only the [Filesystem](https://github.com/illuminate/filesystem/blob/master/Filesystem.php) class is available.  You will need to register the filesystem components manually if you would like to use the disk manager, cloud storage, or the Storage facade.
 
@@ -8,7 +8,7 @@ The service provider expects a configuration file to exist.  The following lines
 
 ```
 mkdir -p config
-https://raw.githubusercontent.com/laravel/laravel/v5.2.0/config/filesystems.php
+curl -o config/filesystems.php https://raw.githubusercontent.com/laravel/laravel/v5.2.0/config/filesystems.php
 ```
 
 ## Registration
