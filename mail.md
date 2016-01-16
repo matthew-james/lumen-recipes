@@ -2,7 +2,7 @@
 
 The iiluminate/mail package was removed in Lumen 5.2.  You will need to manually add it to send emails in Lumen 5.2+.
 
-## Require The Package
+## Installation
 
 First you need to require the composer package.  Run the following command from the terminal to add the mail package to your composer.json.
 
@@ -19,7 +19,7 @@ $app->register(Illuminate\Mail\MailServiceProvider::class);
 $app->configure('mail');
 ```
 
-## Config
+## Configuration
 
 The service provider expects a configuration file to exist.  The following lines will create the config directory if it does not exist and copy a fresh configuration file from the full Laravel framework.
 
