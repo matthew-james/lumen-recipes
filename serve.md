@@ -1,4 +1,4 @@
-# Tinker
+# Serve
 
 The `php artisan serve` command from Laravel is not available in Lumen, so you will need to add it manually.
 
